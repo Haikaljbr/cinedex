@@ -14,13 +14,14 @@ import '../../widgets/movie_section.dart';
 import '../../widgets/shimmer_loading.dart';
 import '../../widgets/state_views.dart';
 import '../about/about_screen.dart';
+import '../detail/detail_screen.dart';
 
 /// Halaman Beranda: carousel, chip genre, dan section film.
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   void _openDetail(BuildContext context, Movie movie, String? heroTag) {
-    // Dihubungkan ke halaman Detail pada tahap berikutnya.
+    DetailScreen.open(context, movie, heroTag: heroTag);
   }
 
   Future<void> _onRefresh(BuildContext context) async {

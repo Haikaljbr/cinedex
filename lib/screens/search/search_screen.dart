@@ -10,6 +10,7 @@ import '../../providers/view_state.dart';
 import '../../widgets/movie_section.dart';
 import '../../widgets/shimmer_loading.dart';
 import '../../widgets/state_views.dart';
+import '../detail/detail_screen.dart';
 
 /// Halaman Pencarian: kolom cari dan grid hasil.
 class SearchScreen extends StatefulWidget {
@@ -29,7 +30,8 @@ class _SearchScreenState extends State<SearchScreen> {
   }
 
   void _openDetail(Movie movie, String heroTag) {
-    // Dihubungkan ke halaman Detail pada tahap berikutnya.
+    FocusScope.of(context).unfocus();
+    DetailScreen.open(context, movie, heroTag: heroTag);
   }
 
   void _clear(SearchProvider provider) {
