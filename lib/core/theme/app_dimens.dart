@@ -35,6 +35,10 @@ class AppSizes {
   static const double posterHeight = 192;
   static const double posterAspectRatio = 2 / 3;
 
+  /// Tinggi list horizontal: poster + judul + tahun (dengan ruang cadangan
+  /// agar tidak overflow ketika ukuran font sistem diperbesar).
+  static const double sectionListHeight = posterHeight + 64;
+
   static const double carouselHeight = 220;
   static const double carouselViewport = 0.86;
 
@@ -54,6 +58,6 @@ class AppSizes {
         crossAxisCount: 3,
         mainAxisSpacing: AppSpacing.md,
         crossAxisSpacing: AppSpacing.sm,
-        childAspectRatio: 0.5,
+        childAspectRatio: 0.47,
       );
 }

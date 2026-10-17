@@ -88,7 +88,7 @@ class SectionSkeleton extends StatelessWidget {
         ),
         const SizedBox(height: AppSpacing.sm),
         SizedBox(
-          height: AppSizes.posterHeight + 44,
+          height: AppSizes.sectionListHeight,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
             physics: const NeverScrollableScrollPhysics(),

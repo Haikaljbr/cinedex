@@ -60,7 +60,7 @@ class MovieSection extends StatelessWidget {
         SectionHeader(title: title),
         const SizedBox(height: AppSpacing.sm),
         SizedBox(
-          height: AppSizes.posterHeight + 44,
+          height: AppSizes.sectionListHeight,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
