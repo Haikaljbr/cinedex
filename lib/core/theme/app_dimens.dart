@@ -47,4 +47,13 @@ class AppSizes {
   static const double iconSm = 16;
   static const double iconMd = 22;
   static const double iconLg = 64;
+
+  /// Grid poster 3 kolom untuk hasil pencarian dan filter genre.
+  static const SliverGridDelegate posterGridDelegate =
+      SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3,
+        mainAxisSpacing: AppSpacing.md,
+        crossAxisSpacing: AppSpacing.sm,
+        childAspectRatio: 0.5,
+      );
 }
