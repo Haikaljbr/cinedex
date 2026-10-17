@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'home/home_screen.dart';
+import 'search/search_screen.dart';
 
 /// Kerangka utama dengan bottom navigation (Beranda dan Cari).
 /// IndexedStack menjaga state tiap tab saat berpindah.
@@ -19,10 +20,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: IndexedStack(
         index: _index,
-        children: const [
-          HomeScreen(),
-          Center(child: Text('Pencarian')),
-        ],
+        children: const [HomeScreen(), SearchScreen()],
       ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: _index,

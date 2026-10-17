@@ -6,6 +6,7 @@ import 'core/theme/app_theme.dart';
 import 'data/repositories/movie_repository.dart';
 import 'data/services/tmdb_service.dart';
 import 'providers/home_provider.dart';
+import 'providers/search_provider.dart';
 import 'screens/main_screen.dart';
 
 /// Root widget: mendaftarkan repository dan provider, lalu tema aplikasi.
@@ -22,6 +23,9 @@ class CineDexApp extends StatelessWidget {
         ChangeNotifierProvider<HomeProvider>(
           create: (context) =>
               HomeProvider(context.read<MovieRepository>())..loadHome(),
+        ),
+        ChangeNotifierProvider<SearchProvider>(
+          create: (context) => SearchProvider(context.read<MovieRepository>()),
         ),
       ],
       child: MaterialApp(
