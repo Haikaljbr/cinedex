@@ -5,8 +5,6 @@ Aplikasi mobile **penjelajah film** berbasis Flutter yang mengambil data dinamis
 berperingkat tinggi, dan yang akan tayang, cari film berdasarkan judul, lalu lihat detail lengkap
 beserta pemeran dan trailernya.
 
-Dibuat untuk tugas UTS mata kuliah **Pemrograman Mobile**.
-
 ## Screenshot
 
 | Beranda | Filter Genre | Detail | Detail (Pemeran) |
